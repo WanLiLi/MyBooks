@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--总结： 为了使得Toolbar有滑动效果，必须做到如下三点：
+
+CoordinatorLayout必须作为整个布局的父布局容器。
+给需要滑动的组件设置 app:layout_scrollFlags=”scroll|enterAlways” 属性。
+给你的可滑动的组件，也就是RecyclerView 或者 NestedScrollView 设置如下属性：
+app:layout_behavior=@string/appbar_scrolling_view_behavior
+
+
+CoordinatorLayout还提供了layout_anchor和layout_anchorGravity属性一起配合使用，可以用于放置floating view，
+比如FloatingActionButton与其他View的相对位置。相见Demo中演示。
+
+
+-->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_public"></include>
+
+
+    <!--设置layout_behavior,向下拉，ToolBar显示完整后，继续可以下拉recycView的。否则不能下拉recycView-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:elevation="4dp"
+        android:src="@android:drawable/ic_menu_help"
+        app:borderWidth="0dp"
+        app:layout_anchor="@+id/collapse_toolbar"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="org.wowser.evenbuspro.widget.ScrollAwareFABBehavior"
+        app:rippleColor="@color/colorAccent" />
+
+</android.support.design.widget.CoordinatorLayout>
+
+

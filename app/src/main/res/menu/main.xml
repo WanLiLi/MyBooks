@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_qr"
+        android:orderInCategory="100"
+        android:title="@string/qr_code"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_ottoTest"
+        android:orderInCategory="100"
+        android:title="@string/ottoTest"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/customViewTestActivity"
+        android:orderInCategory="100"
+        android:title="@string/menu3"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/menu_service"
+        android:orderInCategory="100"
+        android:title="@string/service"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_cantact"
+        android:orderInCategory="100"
+        android:title="@string/cantact"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/capture"
+        android:orderInCategory="100"
+        android:title="6.0权限测试相机"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/custom_dibugundong"
+        android:orderInCategory="100"
+        android:title="自定义的底部滚动"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/custom_dragHelper"
+        android:orderInCategory="100"
+        android:title="dragHelper"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/baiduMap"
+        android:orderInCategory="100"
+        android:title="百度地图"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/photograph"
+        android:orderInCategory="100"
+        android:title="拍照"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/helloChart"
+        android:orderInCategory="100"
+        android:title="helloChart"
+        app:showAsAction="never" />
+
+
+    <item
+    android:id="@+id/customRecycGellery"
+    android:orderInCategory="100"
+    android:title="自定义滚动recyc"
+    app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/greedao"
+        android:orderInCategory="100"
+        android:title="greedao"
+        app:showAsAction="never" />
+
+
+
+
+</menu>

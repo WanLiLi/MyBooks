@@ -1,0 +1,7 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!--Navigation bar color   dibu导航栏底色 only 21 -->
+        <item name="android:navigationBarColor">@color/red</item>
+    </style>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dip"
+    android:background="@color/red"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp"
+    >
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/itemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                android:contentDescription="@null"
+                android:minWidth="128dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        style="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        android:singleLine="true"
+                        tools:text="Android 开发艺术探索" />
+
+                    <TextView
+                        android:id="@+id/txtPress"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="2dp"
+                        android:singleLine="true"
+                        tools:text="@string/txt_Press" />
+
+                    <TextView
+                        android:id="@+id/txtPrice"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="2dp"
+                        android:singleLine="true"
+                        tools:text="@string/txt_Price" />
+
+                    <TextView
+                        android:id="@+id/txtAuthor"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/red"
+                        tools:text="@string/txt_Author" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/btnRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtPurchase"
+                            style="@style/Base.Widget.AppCompat.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:background="@null"
+                            android:minWidth="88dp"
+                            android:padding="8dp"
+                            tools:text="@string/txt_Purchase" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</android.support.v7.widget.CardView>

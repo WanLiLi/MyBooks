@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="128dp"
+    android:minWidth="128dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:elevation="14dp"
+    android:layout_margin="8dp"
+    android:background="@color/red"
+    android:id="@+id/lay_recycItem_two"
+    >
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="128dp"
+        android:minWidth="128dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person"
+        />
+</android.support.v7.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.wowser.evenbuspro._customview.CustomDragView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_dragView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="111"
+        android:textSize="10sp"
+        android:background="@color/red"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="222"
+        android:textSize="10sp"
+        android:background="@color/viewfinder_border"
+        android:layout_below="@+id/txt_1"
+        />
+
+
+    <ImageView
+        android:id="@+id/txt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_2"
+        android:background="@color/colorAccent"
+        />
+
+</org.wowser.evenbuspro._customview.CustomDragView>
+

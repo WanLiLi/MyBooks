@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.wowser.evenbuspro.activitys.CustomViewTest">
+
+    <org.wowser.evenbuspro._customview.CustomView
+        android:id="@+id/image_zi1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red"
+        android:longClickable="true"></org.wowser.evenbuspro._customview.CustomView>
+
+    <ImageView
+        android:id="@+id/image_zi2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/zise" />
+
+
+    <ImageView
+        android:id="@+id/image_zi3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/yellow" />
+
+
+    <org.wowser.evenbuspro._customview.CustomShape
+        android:id="@+id/customProgress"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/image_zi1"
+        android:layout_centerInParent="true" />
+
+
+    <ImageView
+        android:id="@+id/image_progress_shape"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/customProgress"
+        android:background="@drawable/progress_shape"
+        />
+</RelativeLayout>
